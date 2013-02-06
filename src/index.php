@@ -9,7 +9,7 @@ class MTBotcommand {
     public static $byte;
     public static $direction;
     public static $ackCommand;
-
+    public static $unpackString;
 }
 
 ?>
