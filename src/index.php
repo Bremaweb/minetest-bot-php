@@ -15,7 +15,11 @@ $serverPort = $argv[2];
 $controlFile = $argv[3];
 $serverSocket = socket_create(AF_INET, SOCK_DGRAM, SOL_UDP);
 if (false == (@socket_connect($serverSocket, $serverIp, $serverPort))) {
-   echo "Connect [FATAL]:Connect failed: reason: " . socket_strerror(socket_last_error($serverSocket)) . "\n";
+   die("Connect [FATAL]:Connect failed: reason: " . socket_strerror(socket_last_error($serverSocket)) . "\n");
 }
-
+$controlHandle = fopen($controlFile, "rb");
+$fileReadBuffer = fread($controlHandle, 8);
+if (strcasecmp($fileReadBuffer, "mtbotpurephp")!=0){
+    die("File [FATAL]:Impropper file header, perhaps not a MTBot control file?");
+}
 ?>
