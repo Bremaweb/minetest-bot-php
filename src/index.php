@@ -1,5 +1,7 @@
 <?php
-
+require_once 'servercommands.php';
+require_once 'miscdefines.php';
+require_once 'hardwiredContentTypes.php';
 define("CMDTOSERVER", 1); //Otherwise to client
 define("CMDSENDRELIABLE", 2);
 define("CMDACKNEEDED", 4);
