@@ -18,7 +18,7 @@
 		      explicitly sent afterwards
 	*/
 
-	define("CLIENT_BLOCKDATA",0x20); //TODO: Multiple blocks
+	define("CLIENT_BLOCKDATA",0x20); 
 	define("CLIENT_ADDNODE",0x21);
 	define("CLIENT_REMOVENODE",0x22);
 
