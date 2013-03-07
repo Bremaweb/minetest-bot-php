@@ -1,6 +1,9 @@
 minetest-bot-php
+
 A bot for Minetest servers.
+
 ================
+
 Licensed under the GNU GPL 3.0.
 
 Please use this bot for beneficial purposes. If this bot is used for griefing, I may not be inclined to maintain it more. 
@@ -15,3 +18,6 @@ MySQL 5.5 or higher
 A non-Windows OS.
 A stable internet connection.
 Wireshark and an installation of Minetest in case something goes wrong.
+
+Limitations:
+It does not work yet!
